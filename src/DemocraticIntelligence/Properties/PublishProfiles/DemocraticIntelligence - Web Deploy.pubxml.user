@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkBEVgpV7kU6O8AvzVSRF8wAAAAACAAAAAAAQZgAAAAEAACAAAACkgpTNBW7k02msVlRjp3H1peFkMAeJFv+7FEnbKfUWAwAAAAAOgAAAAAIAACAAAADZnkm2RewnvrsSa4VreJiGD/P3YYgRHDCx5fCTdYE8R4AAAACbyfN6eTsrM+tHo0ARRnlVKQ3KyXw7v0iwUB5yj8j6YaO6inCzkPo5+wjJJt9QDPh+lcYVOV5jHHMRwHzaGgZJ4wRzHbaOmQXW9SS6xTEJlYa2yaDpAozw1IBDa3q2aQGGDM8O1+aNuguKS/69AXXm0tiCprNxSQ170xwL2UhKDkAAAAB0E5PQc+KfQgKfaxLHO24ZLVuW9X/g8DxOFEg2AriLP3O/QqT7FlFslwfJkGcZ6e6fVlxqB/k8X3Bk/0lCoU/d</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:democraticintelligence.database.windows.net,1433;Initial Catalog=DemocraticIntelligence_db;User Id=democracydude@democraticintelligence;Password=52%IsNotEnoughForChange</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EfMigrations Include="DemocraticIntelligence.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:democraticintelligence.database.windows.net,1433;Initial Catalog=DemocraticIntelligence_db;User Id=democracydude@democraticintelligence;Password=52%IsNotEnoughForChange</Value>
+    </EfMigrations>
+  </ItemGroup>
+</Project>
