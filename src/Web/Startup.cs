@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using LostHobbit.DemocraticIntelligence.Web.Data;
 using LostHobbit.DemocraticIntelligence.Web.Models;
 using LostHobbit.DemocraticIntelligence.Web.Services;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 
 namespace LostHobbit.DemocraticIntelligence.Web
 {
@@ -40,7 +42,7 @@ namespace LostHobbit.DemocraticIntelligence.Web
         public IConfigurationRoot Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
@@ -58,7 +60,12 @@ namespace LostHobbit.DemocraticIntelligence.Web
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
 
-
+            // Add Autofac
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterModule<LostHobbit.AutoFac.DefaultModule>();
+            containerBuilder.Populate(services);
+            var container = containerBuilder.Build();
+            return container.Resolve<IServiceProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

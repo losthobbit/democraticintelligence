@@ -46,7 +46,8 @@
     },
     "Domain": "1.0.0-*",
     "Data.EF": "1.0.0-*",
-    "Autofac.Extensions.DependencyInjection": "4.0.0-rc3-309"
+    "Autofac.Extensions.DependencyInjection": "4.0.0-rc3-309",
+    "LostHobbit": "1.0.0-*"
   },
 
   "tools": {
