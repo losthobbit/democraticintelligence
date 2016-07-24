@@ -4626,8 +4626,10 @@
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "4.0.0-rc3-309",
           "MailKit": "1.4.1",
+          "Microsoft.AspNetCore.Html.Abstractions": "1.0.0",
           "MimeKit": "1.4.1",
           "NETStandard.Library": "1.6.0",
+          "Newtonsoft.Json": "9.0.1",
           "System.Security.Cryptography.Algorithms": "4.2.0"
         },
         "compile": {
