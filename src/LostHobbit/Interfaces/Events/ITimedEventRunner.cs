@@ -10,9 +10,9 @@ namespace LostHobbit.Interfaces.Events
     /// </summary>
     public interface ITimedEventRunner
     {
-        void RunEventsAsync();
+        void RunEventsAsync(Action callback = null);
         /// <exception cref="AggregateException">Events threw exceptions.</exception>
-        void RunEvents(IEnumerable<ITimedEvent> readyEvents = null);
+        void RunEvents(IEnumerable<ITimedEvent> readyEvents = null, Action callback = null);
 
         void AddEvent(ITimedEvent evt);
         void RemoveEvent(ITimedEvent evt);

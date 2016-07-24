@@ -23,14 +23,14 @@ namespace LostHobbit.Services.Events
         /// <summary>
         /// Run events which are ready, in a separate thread.
         /// </summary>
-        public void RunEventsAsync()
+        public void RunEventsAsync(Action callback = null)
         {
             // Initial check so that I don't have to lock unless necessary
             var readyEvents = GetReadyEvents(events);
 
             if (readyEvents.Any())
             {
-                new Task(() => RunEvents(readyEvents)).Start();
+                new Task(() => RunEvents(readyEvents, callback)).Start();
             }
         }
 
@@ -38,7 +38,8 @@ namespace LostHobbit.Services.Events
         /// Run events which are ready.
         /// </summary>
         /// <exception cref="AggregateException">Events threw exceptions.</exception>
-        public void RunEvents(IEnumerable<ITimedEvent> readyEvents = null)
+        public void RunEvents(IEnumerable<ITimedEvent> readyEvents = null,
+            Action callback = null)
         {
             var eventsToRun = GetEventsToRun(readyEvents ?? events);
 
@@ -59,6 +60,7 @@ namespace LostHobbit.Services.Events
             {
                 throw new AggregateException(exceptions);
             }
+            callback?.Invoke();
         }
 
         public void AddEvent(ITimedEvent evt)

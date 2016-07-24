@@ -92,7 +92,7 @@ namespace LostHobbit.Tests.Services.Events
             target.RunEventsAsync(() => pause.Set());
 
             //Assert
-            pause.WaitOne(2000);
+            Assert.IsTrue(pause.WaitOne(2000));
             evt.Verify(x => x.Action(), Times.Never);
         }
 
