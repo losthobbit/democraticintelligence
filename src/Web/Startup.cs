@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using DemocraticIntelligence.Web.Data;
-using DemocraticIntelligence.Web.Models;
-using DemocraticIntelligence.Web.Services;
+using LostHobbit.DemocraticIntelligence.Web.Data;
+using LostHobbit.DemocraticIntelligence.Web.Models;
+using LostHobbit.DemocraticIntelligence.Web.Services;
 
-namespace DemocraticIntelligence.Web
+namespace LostHobbit.DemocraticIntelligence.Web
 {
     public class Startup
     {
@@ -57,6 +57,8 @@ namespace DemocraticIntelligence.Web
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

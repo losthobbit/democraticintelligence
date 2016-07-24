@@ -3,6 +3,33 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "Autofac/4.0.0-rc3-309": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.0.0-rc3-309": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0-rc3-309",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -4459,6 +4486,32 @@
     }
   },
   "libraries": {
+    "Autofac/4.0.0-rc3-309": {
+      "sha512": "TQr/MFmfTsIwUqM70OgvrM22xLjUZhc2pbGeYzhsaQSdQ2TFRq7myWh7N00URp8E1kaJ3j7WnKFSxbSapMdD5A==",
+      "type": "package",
+      "path": "Autofac/4.0.0-rc3-309",
+      "files": [
+        "Autofac.4.0.0-rc3-309.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net451/Autofac.dll",
+        "lib/net451/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml",
+        "lib/uap10.0/Autofac.dll",
+        "lib/uap10.0/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/4.0.0-rc3-309": {
+      "sha512": "pvVWo438PnaXU6ezQ0HHUnCPLUlvKWJZlXrnf6lfnKLI3hsOx87puiZP4gmstDKKwFyxAGZHbAOv/dBgDO4Q5w==",
+      "type": "package",
+      "path": "Autofac.Extensions.DependencyInjection/4.0.0-rc3-309",
+      "files": [
+        "Autofac.Extensions.DependencyInjection.4.0.0-rc3-309.nupkg.sha512",
+        "Autofac.Extensions.DependencyInjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
     "Libuv/1.9.0": {
       "sha512": "9Q7AaqtQhS8JDSIvRBt6ODSLWDBI4c8YxNxyCQemWebBFUtBbc6M5Vi5Gz1ZyIUlTW3rZK9bIr5gnVyv0z7a2Q==",
       "type": "package",
@@ -11169,6 +11222,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Autofac.Extensions.DependencyInjection >= 4.0.0-rc3-309",
       "Data.EF >= 1.0.0-*",
       "Domain >= 1.0.0-*",
       "Microsoft.ApplicationInsights.AspNetCore >= 1.0.0",

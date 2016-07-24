@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DemocraticIntelligence.Web.Data.Migrations
+namespace LostHobbit.DemocraticIntelligence.Web.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

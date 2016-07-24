@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace DemocraticIntelligence.Web.Models.AccountViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.Models.AccountViewModels
 {
     public class SendCodeViewModel
     {

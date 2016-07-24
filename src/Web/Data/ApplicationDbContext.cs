@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using DemocraticIntelligence.Web.Models;
+using LostHobbit.DemocraticIntelligence.Web.Models;
 
-namespace DemocraticIntelligence.Web.Data
+namespace LostHobbit.DemocraticIntelligence.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

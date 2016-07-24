@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemocraticIntelligence.Web.Models.ManageViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.Models.ManageViewModels
 {
     public class FactorViewModel
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace DemocraticIntelligence.Web
+namespace LostHobbit.DemocraticIntelligence.Web
 {
     public class Program
     {

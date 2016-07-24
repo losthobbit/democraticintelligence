@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemocraticIntelligence.Web.Models.AccountViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.Models.AccountViewModels
 {
     public class ForgotPasswordViewModel
     {

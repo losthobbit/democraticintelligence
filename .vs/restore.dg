@@ -1,7 +1,1 @@
-#:C:\Dev\democraticintelligence\src\Data.EF\Data.EF.xproj
-C:\Dev\democraticintelligence\src\Data.EF\Data.EF.xproj|C:\Dev\democraticintelligence\src\Domain\Domain.xproj
-#:C:\Dev\democraticintelligence\src\DemocraticIntelligence\DemocraticIntelligence.xproj
-C:\Dev\democraticintelligence\src\DemocraticIntelligence\DemocraticIntelligence.xproj|C:\Dev\democraticintelligence\src\Data.EF\Data.EF.xproj
-C:\Dev\democraticintelligence\src\DemocraticIntelligence\DemocraticIntelligence.xproj|C:\Dev\democraticintelligence\src\Domain\Domain.xproj
-C:\Dev\democraticintelligence\src\Data.EF\Data.EF.xproj|C:\Dev\democraticintelligence\src\Domain\Domain.xproj
-#:C:\Dev\democraticintelligence\src\Domain\Domain.xproj
+#:C:\Dev\democraticintelligence\src\LostHobbit\LostHobbit.xproj

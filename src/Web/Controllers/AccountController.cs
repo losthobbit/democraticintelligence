@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using DemocraticIntelligence.Web.Models;
-using DemocraticIntelligence.Web.Models.AccountViewModels;
-using DemocraticIntelligence.Web.Services;
+using LostHobbit.DemocraticIntelligence.Web.Models;
+using LostHobbit.DemocraticIntelligence.Web.Models.AccountViewModels;
+using LostHobbit.DemocraticIntelligence.Web.Services;
 
-namespace DemocraticIntelligence.Web.Controllers
+namespace LostHobbit.DemocraticIntelligence.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

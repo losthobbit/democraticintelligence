@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemocraticIntelligence.Web.Services
+namespace LostHobbit.DemocraticIntelligence.Web.Services
 {
     public interface IEmailSender
     {

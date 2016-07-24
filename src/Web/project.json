@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-DemocraticIntelligence-15bb2555-9de0-4b1a-b7b9-030a18434bdb",
 
   "dependencies": {
@@ -45,7 +45,8 @@
       "type": "build"
     },
     "Domain": "1.0.0-*",
-    "Data.EF": "1.0.0-*"
+    "Data.EF": "1.0.0-*",
+    "Autofac.Extensions.DependencyInjection": "4.0.0-rc3-309"
   },
 
   "tools": {

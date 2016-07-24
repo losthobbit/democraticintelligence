@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace DemocraticIntelligence.Web.Models.ManageViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.Models.ManageViewModels
 {
     public class ManageLoginsViewModel
     {

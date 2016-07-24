@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using DemocraticIntelligence.Web.Models;
-using DemocraticIntelligence.Web.Models.ManageViewModels;
-using DemocraticIntelligence.Web.Services;
+using LostHobbit.DemocraticIntelligence.Web.Models;
+using LostHobbit.DemocraticIntelligence.Web.Models.ManageViewModels;
+using LostHobbit.DemocraticIntelligence.Web.Services;
 
-namespace DemocraticIntelligence.Web.Controllers
+namespace LostHobbit.DemocraticIntelligence.Web.Controllers
 {
     [Authorize]
     public class ManageController : Controller
