@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using LostHobbit.DemocraticIntelligence.Web.Models;
-using LostHobbit.DemocraticIntelligence.Web.Models.AccountViewModels;
+using LostHobbit.DemocraticIntelligence.Domain.Models.UserModels;
+using LostHobbit.DemocraticIntelligence.Web.ViewModels.AccountViewModels;
 using LostHobbit.DemocraticIntelligence.Web.Services;
 
 namespace LostHobbit.DemocraticIntelligence.Web.Controllers

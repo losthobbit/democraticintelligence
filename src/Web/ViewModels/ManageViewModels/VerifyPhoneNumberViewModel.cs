@@ -4,10 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LostHobbit.DemocraticIntelligence.Web.Models.ManageViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.ViewModels.ManageViewModels
 {
-    public class AddPhoneNumberViewModel
+    public class VerifyPhoneNumberViewModel
     {
+        [Required]
+        public string Code { get; set; }
+
         [Required]
         [Phone]
         [Display(Name = "Phone number")]

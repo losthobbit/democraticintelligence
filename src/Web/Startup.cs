@@ -10,10 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using LostHobbit.DemocraticIntelligence.Web.Data;
-using LostHobbit.DemocraticIntelligence.Web.Models;
 using LostHobbit.DemocraticIntelligence.Web.Services;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using LostHobbit.DemocraticIntelligence.Domain.Models.UserModels;
 
 namespace LostHobbit.DemocraticIntelligence.Web
 {

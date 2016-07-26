@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LostHobbit.DemocraticIntelligence.Web.Models.AccountViewModels
+namespace LostHobbit.DemocraticIntelligence.Web.ViewModels.AccountViewModels
 {
     public class VerifyCodeViewModel
     {

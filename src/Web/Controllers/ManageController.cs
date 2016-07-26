@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using LostHobbit.DemocraticIntelligence.Web.Models;
-using LostHobbit.DemocraticIntelligence.Web.Models.ManageViewModels;
+using LostHobbit.DemocraticIntelligence.Web.ViewModels.ManageViewModels;
 using LostHobbit.DemocraticIntelligence.Web.Services;
+using LostHobbit.DemocraticIntelligence.Domain.Models.UserModels;
 
 namespace LostHobbit.DemocraticIntelligence.Web.Controllers
 {
