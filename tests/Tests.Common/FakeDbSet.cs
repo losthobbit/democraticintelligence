@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -11,9 +12,12 @@ namespace LostHobbit.Tests.Common
     /// </summary>
     /// <remarks>
     /// From http://romiller.com/2012/02/14/testing-with-a-fake-dbcontext/
+    /// SO: In .NET Core there is no IDbSet, which this used to inherit from,
+    /// so this class doesn't make sense anymore.  I need to figure out another
+    /// way to fake a DbSet.
     /// </remarks>
     /// <typeparam name="T"></typeparam>
-    public class FakeDbSet<T> : IDbSet<T>
+    public class FakeDbSet<T> : DbSet<T>, IQueryable<T>, IEnumerable<T>
         where T : class
     {
         protected ObservableCollection<T> _data;
